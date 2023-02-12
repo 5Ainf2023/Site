@@ -73,33 +73,97 @@ label{display: none;}
 
 
 
-/*Body*/
-#Body{
+/*Banner*/
+#Banner{
     float: left;
     width: 100%;
     height: 300px;
     background-color: #172d3d;
     }
 
-#Body div h1{
+#Banner div h1{
     color: #d4d9b8;
     font-size: 400%;
     margin-top: 80px;
     margin-left: 3%;
     }
 
-#Body div p{
+#Banner div p{
     color: #d4d9b8;
     font-size: 180%;
     margin-left: 5%;
     }
+
+/*Body*/
+#Body{
+    width: 100%;
+    padding: 0;
+    float: left;
+    background-color: #101f2b;
+    padding-top: 10px;
+    }
+
+/*Body img div*/
+#SubDiv{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    }
+
+#SubDiv div{
+    width: 30%;
+    height: 300px;
+    float: left;
+    padding-top: 20px;
+    }
+
+#SubDiv div div {
+    width: 100%;
+    margin: 0 auto;
+    }
+
+#SubDiv div div img{
+    width: 100%;
+    height: 250px;
+    }
+
+#SubDiv div div div{
+    position: relative;
+    width: 100%; 
+    height: 40px;
+    top: -64px;
+    min-height: 10px;
+    text-align: center;
+    padding-top: 20px;
+    background-color: black;
+    opacity: 80%;
+    transition: all .3s;
+    }   
+    /*div{
+        background-color: #d4d9b8;
+    }*/
+
+#SubDiv div div div:hover{
+    opacity: 100%; 
+    }
+
+#SubDiv div div div a{
+    color: #ccc;
+    margin-bottom: 5px;
+    text-decoration: none;
+    }
+
+/*Middle*/
+.middle{margin: 0 5%;}
+
+
 
 
 
 /*Responsive*/
 @media screen and (max-width: 1200px){
     #container{width: 100%;}
-    #Header{height: 400px;}
+    #Header{height: 400px;} 
 
     #Logo{
         float: none;
@@ -162,6 +226,7 @@ label{display: none;}
     
     /*Menu tendina*/
     #upMenu{
+        z-index: 4;
         display: none;
         float: none;
         margin: 0;
@@ -197,7 +262,62 @@ label{display: none;}
         margin-left: 0px;       
         }
     
-    /**/
+    /*Banner*/
+    #Banner{
+        height: 1200px;
+        }
     
+    #Banner div{text-align: center;}
+
+    #Banner div h1{
+        font-size: 1000%;
+        margin-top: 190px;
+        margin-left: 0;
+        }
+    
+    #Banner div p{
+        color: #d4d9b8;
+        font-size: 400%;
+        margin-left: 0;
+        }
+
+    /*Body*/
+    #Body{
+        padding-top: 80px;
+        }
+
+    #SubDiv div{
+        width: 100%;
+        float: none;
+        margin-bottom: 520px;
+        }
+    
+    #SubDiv div div {
+        width: 90%;
+        height: 600px;
+        /*border-top-right-radius: 80px;
+        border-top-left-radius: 80px;*/
+        }
+    
+    #SubDiv div div img{
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+        height: 100%;
+        }
+
+    #SubDiv div div div{
+        height: 20%;
+        top: -24%;
+        }
+    
+    #SubDiv div div div{
+        text-align: center;
+        font-size: 240%;
+        }
+    
+    /*#SubDiv div div div a{-top: 80px;}*/
+    
+    .middle{margin: 0;}
+
     }
 
